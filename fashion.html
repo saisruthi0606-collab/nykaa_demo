@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nykaa - Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #e91e63;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .nav-btns a {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="logo.jpg" height="80" width="200" alt="Nykaa Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="product.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-btns d-flex">
+        <a href="signin.html" class="btn btn-outline-dark btn-sm">Sign In</a>
+        <a href="cart.html" class="btn btn-dark btn-sm">My Bag</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a79bd998154237.5ed5f5b76397e.jpg"height="100" class="d-block w-100" alt="Banner 1">
+    </div>
+    <div class="carousel-item">
+      <img src="nykaa.jpg" class="d-block w-100" alt="Banner 2">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<!-- Products Section -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Our Fashion Picks</h2>
+  <div class="row">
+
+    <!-- Product 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/6/1/6139e62JK052240_1.jpg" class="card-img-top" alt="Denim Jacket">
+        <div class="card-body">
+          <h5 class="card-title">Denim Jacket</h5>
+          <p class="card-text">₹1,499</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/a/9/a90d25cW20038_2.jpg?tr=w-500" class="card-img-top" alt="Leather Boots">
+        <div class="card-body">
+          <h5 class="card-title">Leather Boots</h5>
+          <p class="card-text">₹3,499</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/5/f/5f87df6dr1123_1.jpg?tr=w-500" class="card-img-top" alt="Summer Dress">
+        <div class="card-body">
+          <h5 class="card-title">Summer Dress</h5>
+          <p class="card-text">₹1,299</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-md-4 mb-4">
+      <div class="card product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/d/c/dce7e67SZ-DGSCARF-3Maroon_2.jpg?tr=w-500" class="card-img-top" alt="Silk Scarf">
+        <div class="card-body">
+          <h5 class="card-title">Silk Scarf</h5>
+          <p class="card-text">₹799</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-md-4 mb-4">
+      <div class="card product-card">
+        <img src="https://images-static.nykaa.com/media/catalog/product/4/0/402b743DMIXTB00004437_6.jpg?tr=w-500" class="card-img-top" alt="Classic T-Shirt">
+        <div class="card-body">
+          <h5 class="card-title">Classic T-Shirt</h5>
+          <p class="card-text">₹599</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="col-md-4 mb-4">
+      <div class="card product-card">
+        <img src="https://intl.nykaafashion.com/cdn/shop/products/SMRIT00000213_4_1800x1800.jpg?v=1681063459" class="card-img-top" alt="Chino Pants">
+        <div class="card-body">
+          <h5 class="card-title">Chino Pants</h5>
+          <p class="card-text">₹1,099</p>
+          <button class="btn btn-primary w-100">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2025 Nykaa. All Rights Reserved.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

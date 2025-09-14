@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nykaa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #e91e63;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .view-luxury-btn.active {
+      background-color: #e91e63;
+      border-color: #e91e63;
+    }
+    .navbar .btn {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="logo.jpg" height="80" width="200" alt="Nykaa Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto me-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">PRODUCT</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+      <a href="sigin.html" class="btn btn-outline-primary">Sign In</a>
+      <a href="cart.html" class="btn btn-outline-danger">My Bag</a>
+    </div>
+  </div>
+</nav>
+
+<!-- YouTube Video Embed -->
+<div class="ratio ratio-16x9">
+  <iframe 
+    src="https://www.youtube.com/embed/CgM91LnfRJ8?autoplay=1&mute=1&start=3&rel=0&modestbranding=1&showinfo=0&controls=1" 
+    title="YouTube video player"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+    referrerpolicy="strict-origin-when-cross-origin">
+  </iframe>
+</div>
+
+<!-- Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images-static.nykaa.com/uploads/7a9652f5-7f4a-4923-8110-80c04d0f6c02.jpg?tr=cm-pad_resize,w-600" class="d-block w-100" alt="Banner 1">
+    </div>
+    <div class="carousel-item">
+      <img src="nykaa.jpg" class="d-block w-100" alt="Banner 2">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Product Section -->
+<div class="container mt-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="text-start">View Luxury</h2>
+    <a href="luxury.html" class="btn btn-danger view-luxury-btn active">Explore</a>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card product-card">
+        <img src="kay.jpg" class="card-img-top" alt="Lipstick">
+        <div class="card-body">
+          <h5 class="card-title">KAY BEAUTY</h5>
+          <button class="btn btn-primary w-100">Shop Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card product-card">
+        <img src="dove.jpg" height="200" class="card-img-top" alt="Face Cream">
+        <div class="card-body">
+          <h5 class="card-title">DOVE</h5>
+          <button class="btn btn-primary w-100">Shop Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card product-card">
+        <img src="nyfash.jpg" height="200" class="card-img-top" alt="Shampoo">
+        <div class="card-body">
+          <h5 class="card-title">NYKAA FASHION</h5>
+          <button class="btn btn-primary w-100">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer bg-light">
+  <p>&copy; 2025 Nykaa. All Rights Reserved.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
