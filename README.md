@@ -1,4 +1,4 @@
-# Nykaa E-Commerce Website (Static)
+# Nykaa E-Commerce Website 
 
 ## 📌 Project Overview
 
